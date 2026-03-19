@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#1B1726;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.header{
+    background-image: url(imagen4.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display:flex;
+    align-items:center;
+}
+
+.menu{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#FF5A2C;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.navbar ul li{
+    float:left;
+}
+
+.navbar ul li a{
+    color:white;
+    padding:20px;
+    display:block;
+}
+
+.navbar ul li a:hover{
+    color:#FF5A2C;
+}
+
+.header-txt{
+    color:white;
+}
+
+.header-txt h1{
+    font-size:50px;
+}
+
+.header-txt span{
+    color:#FF5A2C;
+}
+
+
+.contenido{
+    padding:80px 0;
+    text-align:center;
+}
+
+h2{
+    color:white;
+    margin-bottom:40px;
+}
+
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.card{
+    background:#222;
+    padding:25px;
+    width:250px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#333;
+}
+
+.card h3{
+    color: #FF5A2C;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#ccc;
+}
+
+
+.contact{
+    padding:80px 20px;
+}
+
+.contact-content{
+    background:#2A223A;
+    padding:40px;
+    border-radius:30px;
+    text-align:center;
+}
+
+.contact-content h3 {
+    color: #FFFFFF;
+}
+
+input{
+    padding:15px;
+    border-radius:20px;
+    border:none;
+    margin:10px;
+}
+
+.btn-3{
+    background:#FF5A2C;
+    color:white;
+    cursor:pointer;
+}
+
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    padding:40px 0;
+}
+
+.link ul{
+    display:flex;
+}
+
+.link ul li a{
+    color:white;
+    margin-right:15px;
+}
+
+
+@media(max-width:768px){
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .footer{
+        flex-direction:column;
+        text-align:center;
+    }
+}
