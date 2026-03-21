@@ -112,32 +112,6 @@
 </section>
 
 
-
-
-<script>
-
-let index = 0;
-const slides = document.querySelectorAll(".slide");
-
-function mostrarSlide() {
-
-    slides.forEach(slide => slide.style.display = "none");
-
-    index++;
-
-    if(index > slides.length){
-        index = 1;
-    }
-
-    slides[index-1].style.display = "block";
-
-    setTimeout(mostrarSlide, 3000);
-}
-
-mostrarSlide();
-
-</script>
-
  <main class="product container">
 
         <h2>Todos los Juegos</h2>
