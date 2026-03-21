@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TIENDA DE JUEGOS  🎮</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">TIENDA DE JUEGOS  🎮</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="Resources/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+        </div>
+    
+
+
+  <div class="header-content container">
+            <div class="header-txt">
+                <h1>Compra tu <span>Juego</span> <br> Favorito Aqui </h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>RPG</h3>
+            <p>Es un estilo donde el jugador controla a un personaje y desarrolla su historia. Normalmente se puede subir de nivel, mejorar habilidades, conseguir armas y tomar decisiones que afectan la historia del juego. </p>
+        </div>
+
+        <div class="card">
+            <h3>Shooter</h3>
+            <p>Es un estilo de juego basado en disparos. El objetivo suele ser eliminar enemigos usando diferentes armas. Puede ser en primera persona (FPS) o tercera persona.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estrategia</h3>
+            <p>En este estilo el jugador debe pensar y planear antes de actuar. Generalmente consiste en administrar recursos, crear ejércitos o construir bases para vencer al enemigo.</p>
+        </div>
+
+    </div>
+
+    </header>
+    <section class="popular container">
+
+        <h2>Juegos Populares</h2>
+        <div class="popular-content">
+             <div class="card">
+                <div class="card__container">
+                    <img class="card__background" src="Resources/Call of Duty.jpg" alt="Call of Duty">
+                </div>
+                <img src="Resources/Call of Duty_hover.png" class="card__image" alt="Call of Duty Hover">
+            </div>
+
+            <div class="card">
+                <div class="card__container">
+                    <img class="card__background" src="Resources/Fifa.jpg" alt="Fifa">
+                </div>
+                <img src="Resources/Fifa_hover.png" class="card__image" alt="Fifa Hover">
+            </div>
+
+            <div class="card">
+                <div class="card__container">
+                    <img class="card__background" src="Resources/Fortnite.jpg" alt="Fortnite">
+                </div>
+                <img src="Resources/Fortnite_hover.png" class="card__image" alt="Fortnite Hover">
+            </div>
+
+            <div class="card">
+                <div class="card__container">
+                    <img class="card__background" src="Resources/GTA.jpg" alt="GTA">
+                </div>
+                <img src="Resources/GTA_hover.png" class="card__image" alt="GTA Hover">
+            </div>
+
+            <div class="card">
+                <div class="card__container">
+                    <img class="card__background" src="Resources/Halo.jpg" alt="Halo">
+                </div>
+                <img src="Resources/Halo_hover.png" class="card__image" alt="Halo Hover">
+            </div>
+
+            <div class="card">
+                <div class="card__container">
+                    <img class="card__background" src="Resources/Minecraft.jpg" alt="Minecraft">
+                </div>
+                <img src="Resources/Minecraft_hover.gif" class="card__image" alt="Minecraft Hover">
+            </div>
+
+            <div class="card">
+                <div class="card__container">
+                    <img class="card__background" src="Resources/SpiderMan.jpg" alt="Spider-Man">
+                </div>
+                <img src="Resources/SpiderMan_hover.png" class="card__image" alt="Spider-Man Hover">
+            </div>
+        </div>
+    </section>
+
+</section>
+
+
+
+
+<script>
+
+let index = 0;
+const slides = document.querySelectorAll(".slide");
+
+function mostrarSlide() {
+
+    slides.forEach(slide => slide.style.display = "none");
+
+    index++;
+
+    if(index > slides.length){
+        index = 1;
+    }
+
+    slides[index-1].style.display = "block";
+
+    setTimeout(mostrarSlide, 3000);
+}
+
+mostrarSlide();
+
+</script>
+
+ <main class="product container">
+
+        <h2>Todos los Juegos</h2>
+
+        <div class="product-content">
+
+            <div class="product-1">
+                <img src="Resources/l1.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego HALO</h3>
+                    <div class="precio">
+                        <p>COL$ 42.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="Resources/l2.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego FREE FIRE</h3>
+                    <div class="precio">
+                        <p>COL$ 16.000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="Resources/l3.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego CLASH ROYALE</h3>
+                    <div class="precio">
+                        <p>COL$ 16.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="Resources/l4.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego Cyberpunk 2077</h3>
+                    <div class="precio">
+                        <p>COL$ 199.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="Resources/l5.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego Fortnite</h3>
+                    <div class="precio">
+                        <p>COL$ 59.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="Resources/l6.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego Gears of War</h3>
+                    <div class="precio">
+                        <p>COL$ 208.000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="Resources/l7.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego Crash Bandicoot</h3>
+                    <div class="precio">
+                        <p>COL$ 149.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="Resources/l8.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego Grand Theft Auto V </h3>
+                    <div class="precio">
+                        <p>COL$ 477.000</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-1">
+                <img src="Resources/l9.jpg" alt="">
+                <div class="product txt">
+                    <h3>Juego Call of Dut</h3>
+                    <div class="precio">
+                        <p>COL$ 289.900</p>
+                        <a href="#" class="btn-2">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <section class="contact container">
+        <div class="contact-content">
+            <h3>Suscribete a nuestra pagina</h3>
+            <form>
+                <input type="email" placeholder="Escribe tu correo">
+                <input type="submit" class="btn-3" value="Enviar">
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer container">
+        
+        <div class="link">
+            <a href="#" class="logo">TIENDA DE JUEGOS 🎮</a>
+        </div>
+        <div class="link">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
